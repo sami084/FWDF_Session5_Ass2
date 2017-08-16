@@ -1,0 +1,47 @@
+<!DOCTYPE html >
+<html>
+		<head>
+		<title>StringCheck</title>
+  
+  		<style>
+		/* Style for div element */
+       
+	   	div{
+		padding:15px;
+		width:50%;
+		background-color:Crimson;
+		color:snow; 
+		font-family:Georgia, "Times New Roman", Times, serif;	
+   		}
+        </style>
+		</head>
+		<body>
+ 		
+      	<h1> String Check</h1>
+        <div>
+     	<p><strong>Kindly enter a character below to check whether it is vowel or consonant.</strong></p> 
+        Enter a character:<br> <input type="text" id="char"=><br><br>
+		<input name="Submit" type="submit" onClick="stringCheck()" value="Check">
+        
+        <p id="demo"> </p>
+        </div>
+ 
+ 	    <script language="javascript" >
+			
+		function stringCheck() 	//function to check whether given character is vowel or consonant.
+		{
+		var ch = document.getElementById("char").value; //storing input in ch variable.
+		
+		if (ch == 'a' || ch == 'A' || ch == 'e' || ch == 'E' || ch == 'i' || ch == 'I' || ch =='o' || ch=='O' || ch == 'u' || ch == 'U')
+		{
+			document.getElementById("demo").innerHTML = ch + " is a vowel.";
+		}
+		else
+		{
+		
+		document.getElementById("demo").innerHTML = ch + " is a consonant.";
+		}
+		}
+ 		</script>
+		</body>
+</html>
